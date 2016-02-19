@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Tooltip - Custom content</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        .photo {
+            width: 500px;
+            text-align: center;
+        }
+        .photo .ui-widget-header {
+            margin: 1em 0;
+        }
+        .map {
+            width: 7005px;
+            height: 350px;
+        }
+        .ui-tooltip {
+            max-width: 350px;
+        }
+    </style>
+
+</head>
+<body>
+
+<input type="button" id="btnProcessPoem" value="Process Poem">
+
+<div class="ui-widget photo">
+    <div class="ui-widget-header ui-corner-all">
+        <h2>St. Stephen with a rose in and outof the garden he goes. Country Galande</h2>
+        <h3><a href="http://maps.google.com/maps?q=vienna,+austria&amp;z=11" data-geo="">Vienna, Austria</a></h3>
+    </div>
+    <a href="http://en.wikipedia.org/wiki/File:Wien_Stefansdom_DSC02656.JPG">
+        <img src="images/st-stephens.jpg" alt="St. Stephen&apos;s Cathedral" class="ui-corner-all">
+    </a>
+</div>
+
+<div class="ui-widget photo">
+    <div class="ui-widget-header ui-corner-all">
+        <h2>Tower Bridge</h2>
+        <h3><a href="http://maps.google.com/maps?q=london,+england&amp;z=11" data-geo="">London, England</a></h3>
+    </div>
+    <a href="http://en.wikipedia.org/wiki/File:Tower_bridge_London_Twilight_-_November_2006.jpg">
+        <img src="images/tower-bridge.jpg" alt="Tower Bridge" class="ui-corner-all">
+    </a>
+</div>
+
+<div data-geo="">love</div>
+
+<p data-geo="">cool</p>
+
+<script src="js/main2.js"></script>
+</body>
+</html>
